@@ -1,6 +1,6 @@
-﻿namespace Task.Domain.Interfaces;
+﻿namespace Tasks.Domain.Interfaces;
 
-public interface ITasks
+public interface ITasking
 {
     //Task<List<Tasks>> GetAllTasksAsync();
     //Task<Tasks> GetBlogByIdAsync(int id);

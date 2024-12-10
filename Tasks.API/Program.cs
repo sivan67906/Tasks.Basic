@@ -1,9 +1,9 @@
 using Microsoft.EntityFrameworkCore;
-using Task.Persistence.Data;
+using Tasks.Persistence.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddDbContext<TaskDbContext>(option => option.UseSqlServer(
+builder.Services.AddDbContext<TaskingDbContext>(option => option.UseSqlServer(
     builder.Configuration.GetConnectionString("AvivDbContextCS")));
 
 // Add services to the container.

@@ -1,4 +1,4 @@
-﻿namespace Task.Domain.Abstractions;
+﻿namespace Tasks.Domain.Abstractions;
 
 public abstract class BaseEntitiy
 {

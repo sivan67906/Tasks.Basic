@@ -1,23 +1,17 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.AspNetCore.Mvc;
-using Task.Application.Tasks.Commands.CreateTasks;
-using Task.Application.Tasks.Commands.DeleteTasks;
-using Task.Application.Tasks.Commands.UpdateTasks;
-using Task.Application.Tasks.Queries.GetTasksById;
+using Tasks.Application.Tasking.Commands.CreateTasks;
+using Tasks.Application.Tasking.Commands.DeleteTasks;
+using Tasks.Application.Tasking.Commands.UpdateTasks;
+using Tasks.Application.Tasking.Queries.GetTasksById;
 
-namespace Task.API.Controllers;
+namespace Tasks.API.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
-public class TasksController : ControllerBase
+public class TaskingController : ControllerBase
 {
-    public async Task<IActionResult> GetAll()
-    {
-        return Ok();
-    } 
-
-
     //[HttpGet]
     //public async Task<IActionResult> GetAll()
     //{

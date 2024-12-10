@@ -1,8 +1,8 @@
-﻿using Task.Domain.Abstractions;
+﻿using Tasks.Domain.Abstractions;
 
-namespace Task.Domain.Tasks;
+namespace Tasks.Domain.Tasking;
 
-public sealed class TaskCategory(Guid id) : BaseEntitiy(id)
+public sealed class TaskingCategory(Guid id) : BaseEntitiy(id)
 {
     public string? Code { get; set; }
     public string? Name { get; set; }
@@ -12,5 +12,5 @@ public sealed class TaskCategory(Guid id) : BaseEntitiy(id)
     public int ModifiedBy { get; set; }
     public bool IsActive { get; set; }
 
-    public ICollection<Tasks>? TasksList { get; set; }
+    public ICollection<Tasking>? TasksList { get; set; }
 }

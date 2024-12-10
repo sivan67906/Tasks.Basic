@@ -1,10 +1,9 @@
-﻿using Task.Domain.Interfaces;
-using Task.Domain.Tasks;
-using Task.Persistence.Data;
+﻿using Tasks.Domain.Interfaces;
+using Tasks.Persistence.Data;
 
-namespace Task.Persistence.Repositories;
+namespace Tasks.Persistence.Repositories;
 
-public class TasksRepository(TaskDbContext taskDbContext) : ITasks
+public class TaskingRepository(TaskingDbContext taskingDbContext) : ITasking
 {
     //{
     //    var result = taskDbContext.TaskList.Add(entity);

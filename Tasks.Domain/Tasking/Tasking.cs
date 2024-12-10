@@ -1,9 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
-using Task.Domain.Abstractions;
+using Tasks.Domain.Abstractions;
 
-namespace Task.Domain.Tasks;
+namespace Tasks.Domain.Tasking;
 
-public sealed class Tasks(Guid id) : BaseEntitiy(id)
+public sealed class Tasking(Guid id) : BaseEntitiy(id)
 {
     public string? Code { get; set; }
     [ForeignKey("TaskCategory")]
@@ -23,5 +23,5 @@ public sealed class Tasks(Guid id) : BaseEntitiy(id)
     public int ModifiedBy { get; set; }
     public bool IsActive { get; set; }
 
-    public TaskCategory? TaskCategory { get; set; }
+    public TaskingCategory? TaskCategory { get; set; }
 }
